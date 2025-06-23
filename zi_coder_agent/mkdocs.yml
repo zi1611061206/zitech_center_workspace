@@ -17,6 +17,7 @@ nav:
   - Usage:
       - Running the Server: running_the_server.md
       - Building and Deploying Documentation: building_and_deploying.md
+      - API Documentation (Swagger UI): /swagger/index.html
   - Project Management:
       - Tasks Plan: tasks_plan.md
       - Active Context: active_context.md
