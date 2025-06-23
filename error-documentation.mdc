@@ -1,0 +1,34 @@
+# Error Documentation for Zi Coder Agent
+
+## Purpose
+This document serves as a knowledge base for documenting errors encountered during the development and operation of Zi Coder Agent, along with their resolutions or workarounds. It aims to reduce debugging time by cataloging common issues and providing tested solutions.
+
+## Known Errors and Fixes
+- **Error: MkDocs Command Not Found**
+  - **Context**: Encountered when attempting to run `mkdocs serve` directly in the terminal.
+  - **Cause**: MkDocs executable is not in the system PATH, often due to installation in a virtual environment without global access.
+  - **Resolution**: Use `python -m mkdocs serve` to run MkDocs via Python module invocation, ensuring it executes from the virtual environment where it is installed.
+  - **Example Log**: `bash: mkdocs: command not found`
+- **Error: Flask Server Fails to Start - Port Already in Use**
+  - **Context**: Occurs when running `python run_server.py` and the default port (5000) is occupied by another process.
+  - **Cause**: Another application or a previous instance of the Flask server is using port 5000.
+  - **Resolution**: Identify and terminate the process using the port with `netstat -aon | findstr :5000` on Windows (or `lsof -i :5000` on macOS/Linux), or modify `run_server.py` to use a different port by adding `app.run(port=5001)`.
+  - **Example Log**: `OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted`
+- **Error: Redis Connection Refused**
+  - **Context**: Encountered during server startup or task execution when Celery or caching attempts to connect to Redis.
+  - **Cause**: Redis server is not running or is not installed on the system.
+  - **Resolution**: Ensure Redis is installed and running. Start Redis with `redis-server` (or appropriate service command for your OS). Verify connection settings in the application configuration if using a non-default host/port.
+  - **Example Log**: `ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.`
+- **Error: SQLAlchemy Database Connection Failure**
+  - **Context**: Occurs when the application cannot connect to the configured database (SQLite/PostgreSQL).
+  - **Cause**: Incorrect database URI, database file not found (for SQLite), or PostgreSQL server not running.
+  - **Resolution**: Check the database URI in configuration files for accuracy. For SQLite, ensure the file path is correct and accessible. For PostgreSQL, verify the server is running and credentials are valid. Test connectivity with a simple script if needed.
+  - **Example Log**: `sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file`
+
+## Reusable Fixes
+- **PATH Issues**: For commands not found due to PATH issues, consider using full paths (e.g., `./.venv/Scripts/python` on Windows) or Python module invocation (e.g., `python -m <module>`). Alternatively, activate the virtual environment to ensure tools are accessible.
+- **Port Conflicts**: When encountering port conflicts, use tools like `netstat` or `lsof` to identify processes using the port, then terminate them or reconfigure the application to use an alternative port. Document custom port configurations for team awareness.
+- **Service Not Running**: For services like Redis or PostgreSQL, create a startup checklist or script to ensure all required services are active before launching the application. Use system service managers (e.g., `systemctl` on Linux) to automate service starts.
+- **Configuration Errors**: Maintain a validated configuration template for database URIs, API keys, and other settings to prevent syntax or path errors. Use environment variables for sensitive or environment-specific configurations to avoid hardcoding.
+
+*Note: This document will be continuously updated with detailed error logs, troubleshooting steps, and additional reusable fixes as issues are encountered and resolved during the project lifecycle. Contributions from the development team are encouraged to build a robust knowledge base.*
