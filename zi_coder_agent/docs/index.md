@@ -1,14 +1,7 @@
-# Welcome to Zi Coder Agent Documentation
+# Zi Coder Agent Documentation
 
-Zi Coder Agent is a comprehensive tool designed to assist with coding tasks, providing AI-driven support for development workflows.
+Welcome to the documentation for Zi Coder Agent, a comprehensive toolset for coding assistance and automation.
 
-## Overview
+This documentation provides detailed information on the setup, usage, and architecture of the Zi Coder Agent project.
 
-This documentation provides detailed information on setting up, configuring, and using Zi Coder Agent effectively in your projects.
-
-## Getting Started
-
-- [Virtual Environment Setup](virtual_environment_setup.md)
-- [Running the Server](running_the_server.md)
-
-Explore the navigation menu for more detailed guides and references.
+<!-- Trigger workflows for GitHub Pages deployment - updated on 6/24/2025 -->
