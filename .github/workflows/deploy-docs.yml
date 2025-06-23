@@ -24,7 +24,7 @@ jobs:
       - name: Build documentation
         run: |
           cd zi_coder_agent
-          mkdocs build
+          mkdocs build --site-dir site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
