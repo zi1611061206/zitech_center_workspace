@@ -1,0 +1,27 @@
+---
+description: Rules for maintaining a modular directory structure for project organization.
+globs: 
+alwaysApply: false
+---
+---
+description: Guidelines for organizing project files into a logical directory structure.
+globs: 
+alwaysApply: true
+---
+# Directory Structure Rules
+
+1. **Modular Organization**: Organize project files into a clear and modular directory structure to promote separation of concerns and enhance maintainability.
+2. **Standard Directory Layout**:
+   - **docs/**: Project documentation, including architecture, technical specifications, and product requirement documents.
+   - **tasks/**: Task plans, active context, RFCs, and project progress tracking.
+   - **src/**: Main source code for the project.
+   - **test/**: Testing suite for the project.
+   - **utils/**: Utility scripts or libraries.
+   - **config/**: Configuration files for the project.
+   - **data/**: Data resources used by the project.
+   - **.clinerules/**: Custom rules for CLINE AI coding assistance.
+3. **Flexibility**: Allow for additional directories as the project grows to accommodate specific needs or components.
+4. **Consistency**: Ensure that all team members and AI assistants adhere to this structure for consistency across the project.
+
+# Note
+This directory structure provides a logical organization of project components, making it easier to navigate and maintain the codebase.

@@ -1,0 +1,12 @@
+# Development dependencies for zi-coder-agent project
+# These are optional and used for development, testing, and code quality assurance
+pytest>=7.1.2
+pytest-cov>=4.0.0
+black>=22.10.0
+isort>=5.10.1
+pylint>=2.15.5
+flake8>=5.0.4
+ruff>=0.0.292
+djlint>=1.19.7
+yamllint>=1.28.0
+pre-commit>=2.20.0

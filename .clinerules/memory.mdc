@@ -1,0 +1,27 @@
+---
+description: Rules for maintaining persistent project documentation and memory.
+globs: 
+alwaysApply: false
+---
+---
+description: Guidelines for documenting project context and memory for AI assistance.
+globs: 
+alwaysApply: true
+---
+# Memory and Documentation Rules
+
+1. **Persistent Memory**: Maintain a comprehensive documentation system as persistent memory for the project and AI assistant. This includes Product Requirement Documents (PRDs), architecture plans, technical specifications, and RFCs.
+2. **Core Documentation Files**:
+   - **product_requirement_docs.md**: Define the project's purpose, core requirements, and goals as the foundational document.
+   - **architecture.md**: Outline the system's design, component relationships, and dependencies.
+   - **technical.md**: Detail the development environment, technologies used, key technical decisions, and constraints.
+   - **tasks_plan.md**: List tasks, track project progress, current status, and known issues.
+   - **active_context.md**: Capture the current focus of development, active decisions, recent changes, and next steps.
+   - **error-documentation.mdc**: Document reusable fixes for mistakes and corrections as a knowledge base.
+   - **lessons-learned.mdc**: Record project-specific learning, patterns, and preferences for continuous improvement.
+3. **Context Files**: Include optional files for literature surveys, RFCs for specific functionalities, and other supplementary documentation in designated directories.
+4. **Automatic Updates**: Ensure that documentation is automatically updated after any planning, implementation, or debugging activities to keep context current.
+5. **Cross-Platform Context**: Maintain a common memory bank across all AI assistants to ensure consistent context and collaborative development.
+
+# Note
+These memory rules ensure that the AI assistant has access to comprehensive project context, facilitating informed decision-making and maintaining project continuity.

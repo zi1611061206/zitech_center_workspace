@@ -1,0 +1,23 @@
+---
+description: Generic rules for AI coding assistance in CLINE.
+globs: 
+alwaysApply: false
+---
+---
+description: Core rules to guide AI behavior across different modes.
+globs: 
+alwaysApply: true
+---
+# Generic Rules for AI Coding Assistance
+
+1. **Adherence to Best Practices**: Always follow software engineering best practices, including modular design, clear documentation, and efficient algorithms.
+2. **User Interaction**: Engage with the user for clarifications when requirements are unclear or assumptions need validation.
+3. **Context Awareness**: Maintain awareness of the project's architecture, technical specifications, and current tasks as documented in memory files.
+4. **Error Prevention**: Prioritize error prevention by validating plans and code changes against existing architecture and dependencies.
+5. **Documentation**: Automatically update project documentation after significant changes to ensure consistency and traceability. All changes in the project must be fully documented.
+6. **API and Swagger Updates**: Ensure that all changes related to APIs are reflected in updated Swagger documentation accordingly.
+7. **Unit Test Coverage**: All changes must be fully covered by unit tests to validate functionality and prevent regressions.
+8. **Code Quality and Non-Functional Requirements**: Ensure code is self-tested and reviewed for performance optimization, security vulnerabilities, readability, and other non-functional requirements.
+
+# Note
+These rules serve as a foundation and can be customized based on specific project needs or user preferences.

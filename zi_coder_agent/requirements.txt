@@ -1,0 +1,9 @@
+# Main dependencies for zi-coder-agent project
+# These are required for the core functionality of the application
+Flask>=2.0.1
+SQLAlchemy>=1.4.41
+Alembic>=1.8.1
+redis>=4.0.2
+celery>=5.2.7
+pymysql>=1.0.2
+flask-swagger-ui>=4.11.1

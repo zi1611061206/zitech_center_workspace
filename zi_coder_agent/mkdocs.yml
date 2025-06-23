@@ -1,0 +1,29 @@
+site_name: Zi Coder Agent Documentation
+site_url: https://example.com/
+docs_dir: docs
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+nav:
+  - Home: index.md
+  - Project Overview:
+      - Product Requirement Document: product_requirement_docs.md
+      - Architecture: architecture.md
+      - Technical Specifications: technical.md
+  - Setup:
+      - Virtual Environment Setup: virtual_environment_setup.md
+  - Usage:
+      - Running the Server: running_the_server.md
+      - Building and Deploying Documentation: building_and_deploying.md
+  - Project Management:
+      - Tasks Plan: tasks_plan.md
+      - Active Context: active_context.md
+  - Knowledge Base:
+      - Error Documentation: error-documentation.mdc
+      - Lessons Learned: lessons-learned.mdc
+  - Miscellaneous:
+      - Placeholder: placeholder.md
+repo_url: https://github.com/your-repo/zi_coder_agent
+repo_name: zi_coder_agent

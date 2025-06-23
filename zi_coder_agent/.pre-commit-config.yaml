@@ -1,0 +1,63 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-yaml
+      - id: check-json
+      - id: pretty-format-json
+      - id: check-merge-conflict
+      - id: trim-trailing-whitespace
+      - id: end-of-file-fixer
+
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black
+        args: [--line-length=100]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: [--profile=black, --line-length=100]
+
+  - repo: https://github.com/PyCQA/pylint
+    rev: v2.15.5
+    hooks:
+      - id: pylint
+        args: [--max-line-length=100]
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 5.0.4
+    hooks:
+      - id: flake8
+        args: [--max-line-length=100, --extend-ignore=E203]
+
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.292
+    hooks:
+      - id: ruff
+        args: [--line-length=100]
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.28.0
+    hooks:
+      - id: yamllint
+        args: [--strict]
+
+  - repo: https://github.com/macisamuele/jsonlint
+    rev: v1.6.3
+    hooks:
+      - id: jsonlint
+
+  - repo: https://github.com/sirosen/djlint
+    rev: v1.19.7
+    hooks:
+      - id: djlint
+        args: [--lint]
+
+  - repo: https://github.com/conventional-changelog/commitlint
+    rev: v17.1.2
+    hooks:
+      - id: commit-msg
+        stages: [commit-msg]
