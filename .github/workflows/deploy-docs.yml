@@ -25,6 +25,8 @@ jobs:
         run: |
           cd zi_coder_agent
           mkdocs build --site-dir site
+          echo "Documentation built in ./site directory:"
+          ls -la ./site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
