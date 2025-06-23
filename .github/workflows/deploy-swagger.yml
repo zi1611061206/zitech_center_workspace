@@ -23,6 +23,8 @@ jobs:
           mv swagger-ui/dist/* swagger-ui/
           rmdir swagger-ui/dist
           sed -i 's|https://petstore.swagger.io/v2/swagger.json|./swagger.json|' swagger-ui/index.html
+          echo "Swagger UI files prepared in ./swagger-ui directory:"
+          ls -la ./swagger-ui
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
