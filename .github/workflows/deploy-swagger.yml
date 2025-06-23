@@ -1,0 +1,32 @@
+name: Deploy Swagger UI to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create Swagger UI directory
+        run: mkdir -p swagger-ui
+
+      - name: Copy Swagger JSON
+        run: cp zi_coder_agent/src/zi_coder_agent/api_server/static/swagger.json swagger-ui/
+
+      - name: Setup Swagger UI
+        run: |
+          curl -sSL https://github.com/swagger-api/swagger-ui/archive/refs/tags/v5.1.0.tar.gz | tar -xz -C swagger-ui --strip-components=1 swagger-ui-5.1.0/dist
+          mv swagger-ui/dist/* swagger-ui/
+          rmdir swagger-ui/dist
+          sed -i 's|https://petstore.swagger.io/v2/swagger.json|./swagger.json|' swagger-ui/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./swagger-ui
+          destination_dir: swagger
