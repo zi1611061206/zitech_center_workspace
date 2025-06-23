@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/">
+        <link rel="canonical" href="https://example.com/active_context/">
       
       
+        <link rel="prev" href="../tasks_plan/">
       
-        <link rel="next" href="product_requirement_docs/">
+      
+        <link rel="next" href="../error-documentation.mdc">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Zi Coder Agent Documentation</title>
+        <title>Active Context - Zi Coder Agent Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-zi-coder-agent-documentation" class="md-skip">
+        <a href="#active-context-for-zi-coder-agent" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Active Context
             
           </span>
         </div>
@@ -196,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -223,32 +225,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -259,44 +239,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -346,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="product_requirement_docs/" class="md-nav__link">
+      <a href="../product_requirement_docs/" class="md-nav__link">
         
   
   
@@ -369,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -392,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technical/" class="md-nav__link">
+      <a href="../technical/" class="md-nav__link">
         
   
   
@@ -460,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="virtual_environment_setup/" class="md-nav__link">
+      <a href="../virtual_environment_setup/" class="md-nav__link">
         
   
   
@@ -528,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="running_the_server/" class="md-nav__link">
+      <a href="../running_the_server/" class="md-nav__link">
         
   
   
@@ -551,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="building_and_deploying/" class="md-nav__link">
+      <a href="../building_and_deploying/" class="md-nav__link">
         
   
   
@@ -578,18 +520,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -605,7 +549,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Project Management
@@ -619,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tasks_plan/" class="md-nav__link">
+      <a href="../tasks_plan/" class="md-nav__link">
         
   
   
@@ -639,10 +583,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="active_context/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Active Context
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -653,6 +619,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Focus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#active-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Active Decisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recent-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recent Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -710,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="error-documentation.mdc" class="md-nav__link">
+      <a href="../error-documentation.mdc" class="md-nav__link">
         
   
   
@@ -733,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lessons-learned.mdc" class="md-nav__link">
+      <a href="../lessons-learned.mdc" class="md-nav__link">
         
   
   
@@ -801,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="placeholder/" class="md-nav__link">
+      <a href="../placeholder/" class="md-nav__link">
         
   
   
@@ -851,18 +873,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#current-focus" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Current Focus
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#active-decisions" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Active Decisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recent-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recent Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
     </span>
   </a>
   
@@ -887,16 +927,30 @@
   
 
 
-<h1 id="welcome-to-zi-coder-agent-documentation">Welcome to Zi Coder Agent Documentation</h1>
-<p>Zi Coder Agent is a comprehensive tool designed to assist with coding tasks, providing AI-driven support for development workflows.</p>
-<h2 id="overview">Overview</h2>
-<p>This documentation provides detailed information on setting up, configuring, and using Zi Coder Agent effectively in your projects.</p>
-<h2 id="getting-started">Getting Started</h2>
+<h1 id="active-context-for-zi-coder-agent">Active Context for Zi Coder Agent</h1>
+<h2 id="current-focus">Current Focus</h2>
 <ul>
-<li><a href="virtual_environment_setup/">Virtual Environment Setup</a></li>
-<li><a href="running_the_server/">Running the Server</a></li>
+<li><strong>Documentation Completion</strong>: Finalizing a comprehensive documentation structure using MkDocs to ensure all project aspects are thoroughly detailed and accessible, providing a solid foundation for development and user onboarding.</li>
 </ul>
-<p>Explore the navigation menu for more detailed guides and references.</p>
+<h2 id="active-decisions">Active Decisions</h2>
+<ul>
+<li><strong>MkDocs with Material Theme</strong>: Committed to using MkDocs with the Material theme for its modern, responsive design and user-friendly documentation interface, enhancing readability and navigation.</li>
+<li><strong>Documentation Structure</strong>: Organizing documentation into logical categories (Project Overview, Setup, Usage, Project Management, Knowledge Base) to align with project modules and cater to diverse user needs, from developers to end-users.</li>
+<li><strong>Content Depth</strong>: Prioritizing detailed, project-specific content over placeholder text in all core documentation files to ensure immediate utility and relevance.</li>
+</ul>
+<h2 id="recent-changes">Recent Changes</h2>
+<ul>
+<li><strong>Core Documentation Enhancement</strong>: Significantly updated key files including Product Requirement Document, Architecture, Technical Specifications, and Tasks Plan with detailed, project-specific information, moving beyond initial placeholders.</li>
+<li><strong>Navigation Update</strong>: Fully configured the navigation structure in <code>mkdocs.yml</code> to include all documentation files, ensuring seamless access through the MkDocs site.</li>
+<li><strong>Server Running</strong>: MkDocs development server is active at <code>http://127.0.0.1:8000/</code>, allowing real-time preview and review of documentation updates.</li>
+</ul>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><strong>Documentation Review</strong>: Conduct a thorough review of remaining documentation files (<code>error-documentation.mdc</code>, <code>lessons-learned.mdc</code>) to expand content with practical examples and project-specific insights.</li>
+<li><strong>API Development Kickoff</strong>: Begin detailed development and testing of API endpoints, focusing on integration with AI models for coding assistance, as outlined in the Tasks Plan.</li>
+<li><strong>User Feedback Integration</strong>: Solicit initial user feedback on documentation usability and content completeness to identify gaps or areas for further clarification before advancing to deeper technical implementation.</li>
+</ul>
+<p><em>Note: This document will be updated regularly to reflect the evolving focus, active decisions, recent changes, and immediate next steps as the project progresses through its development lifecycle.</em></p>
 
 
 
@@ -945,10 +999,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

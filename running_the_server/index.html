@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/">
+        <link rel="canonical" href="https://example.com/running_the_server/">
       
       
+        <link rel="prev" href="../virtual_environment_setup/">
       
-        <link rel="next" href="product_requirement_docs/">
+      
+        <link rel="next" href="../building_and_deploying/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Zi Coder Agent Documentation</title>
+        <title>Running the Server - Zi Coder Agent Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-zi-coder-agent-documentation" class="md-skip">
+        <a href="#running-the-zi-coder-agent-server" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Running the Server
             
           </span>
         </div>
@@ -196,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -223,32 +225,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -259,44 +239,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -346,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="product_requirement_docs/" class="md-nav__link">
+      <a href="../product_requirement_docs/" class="md-nav__link">
         
   
   
@@ -369,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -392,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technical/" class="md-nav__link">
+      <a href="../technical/" class="md-nav__link">
         
   
   
@@ -460,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="virtual_environment_setup/" class="md-nav__link">
+      <a href="../virtual_environment_setup/" class="md-nav__link">
         
   
   
@@ -487,18 +429,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -514,7 +458,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Usage
@@ -525,10 +469,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="running_the_server/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Running the Server
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -539,6 +505,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting the Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing the Swagger UI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopping-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stopping the Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -551,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="building_and_deploying/" class="md-nav__link">
+      <a href="../building_and_deploying/" class="md-nav__link">
         
   
   
@@ -619,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tasks_plan/" class="md-nav__link">
+      <a href="../tasks_plan/" class="md-nav__link">
         
   
   
@@ -642,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="active_context/" class="md-nav__link">
+      <a href="../active_context/" class="md-nav__link">
         
   
   
@@ -710,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="error-documentation.mdc" class="md-nav__link">
+      <a href="../error-documentation.mdc" class="md-nav__link">
         
   
   
@@ -733,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lessons-learned.mdc" class="md-nav__link">
+      <a href="../lessons-learned.mdc" class="md-nav__link">
         
   
   
@@ -801,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="placeholder/" class="md-nav__link">
+      <a href="../placeholder/" class="md-nav__link">
         
   
   
@@ -851,18 +882,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#starting-the-server" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Starting the Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing the Swagger UI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopping-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stopping the Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
     </span>
   </a>
   
@@ -887,16 +945,48 @@
   
 
 
-<h1 id="welcome-to-zi-coder-agent-documentation">Welcome to Zi Coder Agent Documentation</h1>
-<p>Zi Coder Agent is a comprehensive tool designed to assist with coding tasks, providing AI-driven support for development workflows.</p>
-<h2 id="overview">Overview</h2>
-<p>This documentation provides detailed information on setting up, configuring, and using Zi Coder Agent effectively in your projects.</p>
-<h2 id="getting-started">Getting Started</h2>
+<h1 id="running-the-zi-coder-agent-server">Running the Zi Coder Agent Server</h1>
+<p>This guide provides instructions for running the <code>zi-coder-agent</code> server and accessing the API documentation via Swagger UI.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><a href="virtual_environment_setup/">Virtual Environment Setup</a></li>
-<li><a href="running_the_server/">Running the Server</a></li>
+<li><strong>Virtual Environment</strong>: Ensure you have set up a virtual environment and installed the dependencies as described in <a href="../virtual_environment_setup/">Virtual Environment Setup</a>.</li>
 </ul>
-<p>Explore the navigation menu for more detailed guides and references.</p>
+<h2 id="starting-the-server">Starting the Server</h2>
+<ol>
+<li>
+<p><strong>Activate the Virtual Environment</strong>:
+   If you haven't already activated your virtual environment, do so now:</p>
+</li>
+<li>
+<p>On Windows:
+     <code>bash
+     .venv\Scripts\activate</code></p>
+</li>
+<li>
+<p>On macOS/Linux:
+     <code>bash
+     source .venv/bin/activate</code></p>
+</li>
+<li>
+<p><strong>Run the Server</strong>:
+   Use the provided <code>run_server.py</code> script to start the Flask server:</p>
+</li>
+</ol>
+<p><code>bash
+   python run_server.py</code></p>
+<p>By default, the server will run on <code>http://127.0.0.1:5000/</code>. You should see output in your terminal indicating that the server is running.</p>
+<h2 id="accessing-the-swagger-ui">Accessing the Swagger UI</h2>
+<p>The <code>zi-coder-agent</code> API provides a Swagger UI for interactive API documentation. Once the server is running, you can access the Swagger UI at:</p>
+<p><a href="http://127.0.0.1:5000/swagger">http://127.0.0.1:5000/swagger</a></p>
+<p>This interface allows you to explore the API endpoints, view their documentation, and even test API calls directly from the browser.</p>
+<h2 id="stopping-the-server">Stopping the Server</h2>
+<p>To stop the server, simply press <code>Ctrl+C</code> in the terminal where the server is running. This will terminate the Flask application.</p>
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li><strong>Server Configuration</strong>: If you need to change the host or port, you can modify the <code>run_server.py</code> script or pass arguments when running the script. Check the script for more details on configuration options.</li>
+<li><strong>Troubleshooting</strong>: If you encounter issues, ensure all dependencies are installed correctly and that no other application is using the port (default is 5000).</li>
+</ul>
+<p>By following these steps, you can easily run the <code>zi-coder-agent</code> server and interact with its API through the Swagger UI.</p>
 
 
 
@@ -945,10 +1035,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

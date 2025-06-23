@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/">
+        <link rel="canonical" href="https://example.com/virtual_environment_setup/">
       
       
+        <link rel="prev" href="../technical/">
       
-        <link rel="next" href="product_requirement_docs/">
+      
+        <link rel="next" href="../running_the_server/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Zi Coder Agent Documentation</title>
+        <title>Virtual Environment Setup - Zi Coder Agent Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-zi-coder-agent-documentation" class="md-skip">
+        <a href="#virtual-environment-setup-for-zi-coder-agent" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Virtual Environment Setup
             
           </span>
         </div>
@@ -196,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -223,32 +225,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -259,44 +239,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -346,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="product_requirement_docs/" class="md-nav__link">
+      <a href="../product_requirement_docs/" class="md-nav__link">
         
   
   
@@ -369,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -392,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technical/" class="md-nav__link">
+      <a href="../technical/" class="md-nav__link">
         
   
   
@@ -419,18 +361,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -446,7 +390,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Setup
@@ -457,10 +401,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="virtual_environment_setup/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Virtual Environment Setup
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -471,6 +437,119 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-virtual-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up the Virtual Environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up the Virtual Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-using-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Using UV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-using-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Using Pip
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivating-the-virtual-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deactivating the Virtual Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependency-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependency Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependency Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -528,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="running_the_server/" class="md-nav__link">
+      <a href="../running_the_server/" class="md-nav__link">
         
   
   
@@ -551,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="building_and_deploying/" class="md-nav__link">
+      <a href="../building_and_deploying/" class="md-nav__link">
         
   
   
@@ -619,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tasks_plan/" class="md-nav__link">
+      <a href="../tasks_plan/" class="md-nav__link">
         
   
   
@@ -642,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="active_context/" class="md-nav__link">
+      <a href="../active_context/" class="md-nav__link">
         
   
   
@@ -710,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="error-documentation.mdc" class="md-nav__link">
+      <a href="../error-documentation.mdc" class="md-nav__link">
         
   
   
@@ -733,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lessons-learned.mdc" class="md-nav__link">
+      <a href="../lessons-learned.mdc" class="md-nav__link">
         
   
   
@@ -801,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="placeholder/" class="md-nav__link">
+      <a href="../placeholder/" class="md-nav__link">
         
   
   
@@ -851,18 +930,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#setting-up-the-virtual-environment" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Setting Up the Virtual Environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up the Virtual Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-using-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Using UV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-using-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Using Pip
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivating-the-virtual-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deactivating the Virtual Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependency-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependency Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dependency Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
     </span>
   </a>
   
@@ -887,16 +1041,146 @@
   
 
 
-<h1 id="welcome-to-zi-coder-agent-documentation">Welcome to Zi Coder Agent Documentation</h1>
-<p>Zi Coder Agent is a comprehensive tool designed to assist with coding tasks, providing AI-driven support for development workflows.</p>
-<h2 id="overview">Overview</h2>
-<p>This documentation provides detailed information on setting up, configuring, and using Zi Coder Agent effectively in your projects.</p>
-<h2 id="getting-started">Getting Started</h2>
+<h1 id="virtual-environment-setup-for-zi-coder-agent">Virtual Environment Setup for zi-coder-agent</h1>
+<p>This guide provides instructions for setting up a virtual environment for the <code>zi-coder-agent</code> project using either <code>uv</code> (a modern Python package manager designed for speed and simplicity) or <code>pip</code> (the standard Python package manager). By following these instructions, you ensure that your development environment is properly isolated and configured with all necessary dependencies.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><a href="virtual_environment_setup/">Virtual Environment Setup</a></li>
-<li><a href="running_the_server/">Running the Server</a></li>
+<li><strong>Python 3.9+</strong>: Ensure you have Python 3.9 or higher installed on your system.</li>
+<li><strong>UV (Optional)</strong>: If you choose to use <code>uv</code>, install it if you haven't already. You can install it via pip or follow the instructions on the official <a href="https://github.com/astral-sh/uv">UV GitHub page</a>.</li>
 </ul>
-<p>Explore the navigation menu for more detailed guides and references.</p>
+<p><code>bash
+  pip install uv</code></p>
+<ul>
+<li><strong>Pip</strong>: <code>pip</code> comes bundled with Python, so no additional installation is required if Python is installed.</li>
+</ul>
+<h2 id="setting-up-the-virtual-environment">Setting Up the Virtual Environment</h2>
+<h3 id="option-1-using-uv">Option 1: Using UV</h3>
+<ol>
+<li><strong>Clone the Repository</strong> (if not already done):</li>
+</ol>
+<p><code>bash
+   git clone &lt;repository-url&gt;
+   cd zi-coder-agent</code></p>
+<ol>
+<li><strong>Create a Virtual Environment with UV</strong>:</li>
+</ol>
+<p>Use <code>uv</code> to create a virtual environment. This will isolate project dependencies from your global Python environment.</p>
+<p><code>bash
+   uv venv</code></p>
+<p>This command creates a virtual environment in the <code>.venv</code> directory within the project root.</p>
+<ol>
+<li>
+<p><strong>Activate the Virtual Environment</strong>:</p>
+</li>
+<li>
+<p>On Windows:
+     <code>bash
+     .venv\Scripts\activate</code></p>
+</li>
+<li>On macOS/Linux:
+     <code>bash
+     source .venv/bin/activate</code></li>
+</ol>
+<p>Once activated, your terminal prompt should change to indicate that the virtual environment is active.</p>
+<ol>
+<li><strong>Install Dependencies</strong>:</li>
+</ol>
+<p>Use <code>uv</code> to install the project dependencies as defined in <code>pyproject.toml</code>.</p>
+<p><code>bash
+   uv sync</code></p>
+<p>This command installs all dependencies (both regular and dev-dependencies) specified under <code>[project.dependencies]</code> and <code>[project.optional-dependencies.dev]</code> in <code>pyproject.toml</code>.</p>
+<ol>
+<li><strong>Verify Installation</strong>:</li>
+</ol>
+<p>You can verify that the dependencies were installed correctly by checking the virtual environment's site-packages or by running:</p>
+<p><code>bash
+   uv pip list</code></p>
+<h3 id="option-2-using-pip">Option 2: Using Pip</h3>
+<ol>
+<li><strong>Clone the Repository</strong> (if not already done):</li>
+</ol>
+<p><code>bash
+   git clone &lt;repository-url&gt;
+   cd zi-coder-agent</code></p>
+<ol>
+<li><strong>Create a Virtual Environment with Pip</strong>:</li>
+</ol>
+<p>Use Python's built-in <code>venv</code> module to create a virtual environment.</p>
+<p><code>bash
+   python -m venv .venv</code></p>
+<p>This command creates a virtual environment in the <code>.venv</code> directory within the project root.</p>
+<ol>
+<li>
+<p><strong>Activate the Virtual Environment</strong>:</p>
+</li>
+<li>
+<p>On Windows:
+     <code>bash
+     .venv\Scripts\activate</code></p>
+</li>
+<li>On macOS/Linux:
+     <code>bash
+     source .venv/bin/activate</code></li>
+</ol>
+<p>Once activated, your terminal prompt should change to indicate that the virtual environment is active.</p>
+<ol>
+<li><strong>Install Dependencies</strong>:</li>
+</ol>
+<p>Use <code>pip</code> to install the project dependencies using the provided requirements files. These files list all necessary dependencies as defined in <code>pyproject.toml</code>, making installation straightforward.</p>
+<p>Install the main project dependencies:</p>
+<p><code>bash
+   pip install -r requirements.txt</code></p>
+<p>Optionally, install development dependencies (for testing, linting, etc.):</p>
+<p><code>bash
+   pip install -r requirements-dev.txt</code></p>
+<ol>
+<li><strong>Verify Installation</strong>:</li>
+</ol>
+<p>You can verify that the dependencies were installed correctly by running:</p>
+<p><code>bash
+   pip list</code></p>
+<h2 id="deactivating-the-virtual-environment">Deactivating the Virtual Environment</h2>
+<p>When you're done working on the project, you can deactivate the virtual environment:</p>
+<pre><code class="language-bash">deactivate
+</code></pre>
+<p>This will return you to your global Python environment.</p>
+<h2 id="dependency-information">Dependency Information</h2>
+<p>Below is a comprehensive list of dependencies for the <code>zi-coder-agent</code> project as defined in <code>pyproject.toml</code>. This includes both main project dependencies and optional development dependencies.</p>
+<h3 id="main-dependencies">Main Dependencies</h3>
+<p>These are required for the core functionality of the <code>zi-coder-agent</code> project:</p>
+<ul>
+<li><strong>Flask (&gt;=2.0.1)</strong>: A lightweight WSGI web application framework for building web applications.</li>
+<li><strong>SQLAlchemy (&gt;=1.4.41)</strong>: A SQL toolkit and Object-Relational Mapping (ORM) library for database interactions.</li>
+<li><strong>Alembic (&gt;=1.8.1)</strong>: A lightweight database migration tool for use with SQLAlchemy.</li>
+<li><strong>redis (&gt;=4.0.2)</strong>: A client for interacting with Redis, an in-memory data structure store used for caching.</li>
+<li><strong>celery (&gt;=5.2.7)</strong>: A distributed task queue for handling asynchronous tasks and workers.</li>
+<li><strong>pymysql (&gt;=1.0.2)</strong>: A pure-Python MySQL client library for database connections.</li>
+<li><strong>flask-swagger-ui (&gt;=4.11.1)</strong>: A Flask extension for integrating Swagger UI to document API endpoints.</li>
+</ul>
+<h3 id="development-dependencies">Development Dependencies</h3>
+<p>These are optional and used for development, testing, and code quality assurance:</p>
+<ul>
+<li><strong>pytest (&gt;=7.1.2)</strong>: A testing framework for writing simple and scalable test cases.</li>
+<li><strong>pytest-cov (&gt;=4.0.0)</strong>: A pytest plugin for measuring code coverage.</li>
+<li><strong>black (&gt;=22.10.0)</strong>: An uncompromising code formatter for Python.</li>
+<li><strong>isort (&gt;=5.10.1)</strong>: A utility for sorting imports alphabetically and automatically separating them into sections.</li>
+<li><strong>pylint (&gt;=2.15.5)</strong>: A static code analysis tool for identifying errors and enforcing coding standards.</li>
+<li><strong>flake8 (&gt;=5.0.4)</strong>: A tool for style guide enforcement and linting.</li>
+<li><strong>ruff (&gt;=0.0.292)</strong>: A fast Python linter, written in Rust.</li>
+<li><strong>djlint (&gt;=1.19.7)</strong>: A linter for Django templates.</li>
+<li><strong>yamllint (&gt;=1.28.0)</strong>: A linter for YAML files.</li>
+<li><strong>pre-commit (&gt;=2.20.0)</strong>: A framework for managing and maintaining multi-language pre-commit hooks.</li>
+</ul>
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li><strong>Updating Dependencies</strong>: </li>
+<li>With <code>uv</code>, if <code>pyproject.toml</code> is updated with new dependencies, run <code>uv sync</code> again to ensure your virtual environment is up-to-date.</li>
+<li>With <code>pip</code>, manually install any new dependencies listed in <code>pyproject.toml</code> or updates to existing ones using <code>pip install</code>.</li>
+<li><strong>Project Structure</strong>: The virtual environment is located in <code>.venv</code> at the root of the project directory, keeping it separate from the source code and other project files.</li>
+<li><strong>UV Documentation</strong>: For more advanced usage of <code>uv</code>, refer to the official documentation at <a href="https://github.com/astral-sh/uv">https://github.com/astral-sh/uv</a>.</li>
+<li><strong>Pip Documentation</strong>: For more information on using <code>pip</code> and virtual environments, refer to the official Python documentation at <a href="https://docs.python.org/3/library/venv.html">https://docs.python.org/3/library/venv.html</a>.</li>
+</ul>
+<p>By following these steps, you ensure that your development environment for <code>zi-coder-agent</code> is properly isolated and configured with all necessary dependencies, whether using <code>uv</code> or <code>pip</code>.</p>
 
 
 
@@ -945,10 +1229,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

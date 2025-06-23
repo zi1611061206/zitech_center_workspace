@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/">
+        <link rel="canonical" href="https://example.com/technical/">
       
       
+        <link rel="prev" href="../architecture/">
       
-        <link rel="next" href="product_requirement_docs/">
+      
+        <link rel="next" href="../virtual_environment_setup/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Zi Coder Agent Documentation</title>
+        <title>Technical Specifications - Zi Coder Agent Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-zi-coder-agent-documentation" class="md-skip">
+        <a href="#technical-specifications-for-zi-coder-agent" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-header__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Technical Specifications
             
           </span>
         </div>
@@ -196,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
+    <a href=".." title="Zi Coder Agent Documentation" class="md-nav__button md-logo" aria-label="Zi Coder Agent Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -223,32 +225,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -259,44 +239,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -305,18 +247,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -332,7 +276,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Project Overview
@@ -346,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="product_requirement_docs/" class="md-nav__link">
+      <a href="../product_requirement_docs/" class="md-nav__link">
         
   
   
@@ -369,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -389,10 +333,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="technical/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Technical Specifications
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -403,6 +369,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technologies-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies Used
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-technical-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Technical Decisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Instructions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -460,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="virtual_environment_setup/" class="md-nav__link">
+      <a href="../virtual_environment_setup/" class="md-nav__link">
         
   
   
@@ -528,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="running_the_server/" class="md-nav__link">
+      <a href="../running_the_server/" class="md-nav__link">
         
   
   
@@ -551,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="building_and_deploying/" class="md-nav__link">
+      <a href="../building_and_deploying/" class="md-nav__link">
         
   
   
@@ -619,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tasks_plan/" class="md-nav__link">
+      <a href="../tasks_plan/" class="md-nav__link">
         
   
   
@@ -642,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="active_context/" class="md-nav__link">
+      <a href="../active_context/" class="md-nav__link">
         
   
   
@@ -710,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="error-documentation.mdc" class="md-nav__link">
+      <a href="../error-documentation.mdc" class="md-nav__link">
         
   
   
@@ -733,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lessons-learned.mdc" class="md-nav__link">
+      <a href="../lessons-learned.mdc" class="md-nav__link">
         
   
   
@@ -801,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="placeholder/" class="md-nav__link">
+      <a href="../placeholder/" class="md-nav__link">
         
   
   
@@ -851,18 +882,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#development-environment" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Development Environment
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#technologies-used" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Technologies Used
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-technical-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Technical Decisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Instructions
     </span>
   </a>
   
@@ -887,16 +945,50 @@
   
 
 
-<h1 id="welcome-to-zi-coder-agent-documentation">Welcome to Zi Coder Agent Documentation</h1>
-<p>Zi Coder Agent is a comprehensive tool designed to assist with coding tasks, providing AI-driven support for development workflows.</p>
-<h2 id="overview">Overview</h2>
-<p>This documentation provides detailed information on setting up, configuring, and using Zi Coder Agent effectively in your projects.</p>
-<h2 id="getting-started">Getting Started</h2>
+<h1 id="technical-specifications-for-zi-coder-agent">Technical Specifications for Zi Coder Agent</h1>
+<h2 id="development-environment">Development Environment</h2>
 <ul>
-<li><a href="virtual_environment_setup/">Virtual Environment Setup</a></li>
-<li><a href="running_the_server/">Running the Server</a></li>
+<li><strong>Language</strong>: Python 3.9+ is required to ensure compatibility with modern libraries and features used in the project.</li>
+<li><strong>IDE Support</strong>: Optimized for Visual Studio Code with extensions for Python, Git, and Markdown, but compatible with other major IDEs like PyCharm and IntelliJ IDEA.</li>
+<li><strong>Version Control</strong>: Git for source code management, hosted on platforms like GitHub for collaboration and version tracking.</li>
+<li><strong>Dependency Management</strong>: Supports both <code>uv</code> for fast dependency resolution and <code>pip</code> for traditional package installation, managed via <code>pyproject.toml</code>.</li>
+<li><strong>Virtual Environment</strong>: Utilizes isolated environments (<code>.venv</code>) to prevent dependency conflicts and ensure reproducibility across development setups.</li>
 </ul>
-<p>Explore the navigation menu for more detailed guides and references.</p>
+<h2 id="technologies-used">Technologies Used</h2>
+<ul>
+<li><strong>Web Framework</strong>: Flask as the lightweight WSGI framework for building the API server, chosen for its simplicity and flexibility in rapid development.</li>
+<li><strong>API Documentation</strong>: <code>flask-swagger-ui</code> for integrating Swagger UI, providing interactive documentation and testing capabilities for API endpoints.</li>
+<li><strong>Database</strong>: SQLAlchemy as the ORM for database interactions, with Alembic for schema migrations, supporting SQLite for development and PostgreSQL for production environments.</li>
+<li><strong>Task Queue</strong>: Celery for distributed task processing, enabling asynchronous execution of long-running AI tasks or batch operations.</li>
+<li><strong>Caching</strong>: Redis as an in-memory data store for caching API responses, model outputs, and session data to enhance performance.</li>
+<li><strong>AI Models</strong>: Infrastructure to integrate with machine learning frameworks and external MCP servers for AI capabilities, managed through the Model Management component.</li>
+<li><strong>Testing</strong>: <code>pytest</code> for unit and integration testing, with <code>pytest-cov</code> for coverage analysis to ensure code reliability.</li>
+<li><strong>Code Quality</strong>: Tools like <code>black</code> and <code>isort</code> for formatting, <code>pylint</code> and <code>flake8</code> for linting, and <code>pre-commit</code> hooks for maintaining code standards during development.</li>
+</ul>
+<h2 id="key-technical-decisions">Key Technical Decisions</h2>
+<ul>
+<li><strong>Flask over FastAPI</strong>: Chose Flask for its simplicity and extensive community support, prioritizing ease of setup over the asynchronous benefits of FastAPI for the initial implementation, with potential migration planned for future scalability needs.</li>
+<li><strong>Modular Design</strong>: Adopted a modular architecture to separate concerns (API, database, model management, etc.), improving maintainability and allowing independent updates to components.</li>
+<li><strong>Redis for Caching</strong>: Selected Redis for its high performance in caching frequently accessed data, reducing load on the database and AI models, thus improving response times.</li>
+<li><strong>Celery for Asynchronous Tasks</strong>: Implemented Celery with Redis as a message broker to handle computationally intensive tasks asynchronously, ensuring the API remains responsive under load.</li>
+<li><strong>SQLAlchemy with Alembic</strong>: Opted for SQLAlchemy for its robust ORM capabilities and Alembic for database migrations, providing flexibility to switch between SQLite and PostgreSQL based on environment needs.</li>
+<li><strong>Cross-Platform Support</strong>: Designed the system to be compatible with Windows, macOS, and Linux, using platform-agnostic tools and providing detailed setup instructions for each OS.</li>
+</ul>
+<h2 id="constraints">Constraints</h2>
+<ul>
+<li><strong>Cross-Platform Compatibility</strong>: Must support Windows, macOS, and Linux environments, requiring careful handling of OS-specific paths, commands, and dependencies during setup and operation.</li>
+<li><strong>Performance Requirements</strong>: Needs to efficiently process large codebases and handle multiple simultaneous requests with minimal latency, necessitating optimized caching and asynchronous processing.</li>
+<li><strong>Resource Limitations</strong>: Should operate within the constraints of standard developer hardware (e.g., 8GB RAM, mid-range CPU), balancing AI model complexity with resource consumption.</li>
+<li><strong>Security Considerations</strong>: Must protect user data and code through secure API interactions, encrypted database storage, and safe handling of external MCP server communications.</li>
+<li><strong>Dependency Conflicts</strong>: Careful management of library versions in <code>pyproject.toml</code> to avoid conflicts, especially between development and production dependencies.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<ul>
+<li><strong>Environment Setup</strong>: Detailed in <code>virtual_environment_setup.md</code>, covering virtual environment creation and dependency installation using <code>uv</code> or <code>pip</code>.</li>
+<li><strong>Server Operation</strong>: Instructions for running the server are provided in <code>running_the_server.md</code>, including activation of the virtual environment and launching the Flask application.</li>
+<li><strong>Documentation Deployment</strong>: Guidance on building and deploying the documentation site is available in <code>building_and_deploying.md</code>, supporting local previews and hosting on platforms like GitHub Pages.</li>
+</ul>
+<p><em>Note: This document will be further expanded with additional technical details, performance benchmarks, and specific setup configurations as the project progresses.</em></p>
 
 
 
@@ -945,10 +1037,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
